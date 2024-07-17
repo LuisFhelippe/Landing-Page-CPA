@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>EJA EAD - Educação de Jovens e Adultos</title>
 </head>
@@ -20,37 +22,127 @@
         <header>
 
             <nav class="header-content container">
-                <div class="header-icons">
-                    <a href="#">
+                <div class="header-icons" data-aos="fade-down">
+                    <a href="https://www.instagram.com/cpaeducacao/" target="_blank">
                         <i class="fa-brands fa-instagram fa-2x"></i>
+                        
                     </a>
-                    <a href="#">
+                    <a href="https://www.facebook.com/cpaeducacao" target="_blank">
                         <i class="fa-brands fa-facebook fa-2x"></i>
                     </a>
-                    <a href="#">
-                        <i class="fa-brands fa-whatsapp fa-2x"></i>
+                </div>
+
+                <div class="header-logo" data-aos="fade-down" data-aos-delay="350">
+                    <img 
+                        data-aos="flip-up"
+                        data-aos-delay="300"
+                        data-aos-duration="1500"
+                        src="assets/logohorizontal.png"
+                        alt="Logo CPA Educação"
+                    />
+                </div>
+
+                <div  data-aos="fade-down">
+                    <a 
+                    href="https://www.cpaedu.com.br/"
+                    class="header-button " 
+                    target="_blank"
+                    >
+                        Nosso site
                     </a>
                 </div>
-
-                <div class="header-logo">
-                    <img src="assets/logo.png" alt="Logo CPA Educação">
-                </div>
-
-                <div>
-                    <a class="header-button" href="#">
-                        Registrar
-                    </a>
-                </div>
-
+            
             </nav>
+
+            <main class="hero container" data-aos="fade-down" data-aos-delay="400">
+                <h1>VENHA CONCLUIR SEU ENSINO MÉDIO COMPLETO NO MENOR TEMPO!</h1>
+                <p>Horário de funcionamento: 09:00 às 18:00</p>
+                <a 
+                href="#" 
+                class="button-contact" /*target="#"
+                >
+                    Registrar
+                </a>
+            </main>
 
         </header>
 
     </div>
 
+    <section class="about">
+        <div class="container about-content">
+            <div data-aos="zoom-out-left" data-aos-delay="200">
+                <img 
+                src="assets/imagens.svg" 
+                alt="Imagens sobre o EJA"
+                />
+            </div>
 
+            <div class="about-description"
+            data-aos="fade-right" data-aos-delay="250"
+            >
+                <h2>Sobre</h2>
+                <p>Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non duis augue eros mattis a quis sem sodales.</p>
+                <p>Horário de funcionamento: <strong>09:00 </strong>às<strong> 18:00</strong></p>
+            </div>
 
+        </div>
+    </section>
 
+    <section class="quemsomos">
+        <div class="quemsomos-content container"
+        data-aos="fade-right" data-aos-delay="300"
+        >
+            <h2>QUEM SOMOS</h2>
+            <h3>SOMOS O CPA EDUCAÇÃO</h3>
+            <p>Conheça nossa história</p>
+            <p>O CPA Educação (Centro de Educação Profissional Amaivos) é uma organização privada localizada em Saquarema, RJ, que oferece desde 2012 cursos de formação musical e qualificação profissional. A partir de 2019, ampliou sua atuação para incluir ensino fundamental e médio (EJA), além de cursos técnicos, de nível superior e pós-graduação na modalidade EAD, em parceria com instituições autorizadas pelo MEC.</p>
+            <p>A instituição se destaca por sua infraestrutura moderna, com ambientes climatizados e salas equipadas com tecnologia para melhorar a experiência educacional. Em 2019, foi criada a ONG AMAIVOS Assistência Social, expandindo o alcance do CPA Educação com projetos e serviços gratuitos voltados para a educação e assistência social, beneficiando desempregados, jovens e adolescentes em busca do primeiro emprego, além de promover artes, cultura, esportes e a defesa ambiental.</p>
+            <p>O CPA Educação é reconhecido pela qualidade de seu ensino e seu compromisso com o desenvolvimento social, contando com uma equipe dedicada e parcerias com diversas empresas. A instituição valoriza a transformação social através da educação e é grata aos que apoiam sua missão, incluindo alunos que testemunham mudanças em suas vidas devido à experiência oferecida.</p>
+        </div>
+
+    </section>
+
+    <div class="quemsomos">
+        <h2>Venha nos conhecer</h2>
+    </div>
+
+    <iframe 
+    width="100%"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.466064261245!2d-42.475748924690016!3d-22.896174279262585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x975f49d123851d%3A0x705ca0b92fc0b9e3!2zQ1BBIEVkdWNhw6fDo28!5e0!3m2!1spt-BR!2sbr!4v1721239804091!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/cpaeducacao/" target="_blank">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/cpaeducacao" target="_blank">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+        </div>
+
+        <div>
+            <img 
+            src="assets/logo.png" 
+            alt="Logo CPA Educação"
+            />
+        </div>
+
+        <p>Copyright 2024 | CPA Educação - Todos os direitos reservados.</p>
+
+    </footer>
+
+<a 
+href="https://api.whatsapp.com/send?phone=5522999942800&=Quero%20concluir%20o%20ensino%20m%C3%A9dio!"
+class="btn-whatsapp"
+target="_blank"
+data-aos="zoom-in-up" data-aos-delay="400"
+>
+    <img src="assets/whatssapp.svg" alt="Botão WhatsApp">
+    <span class="tooltip-text">Entre em contato</span>
+</a>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
